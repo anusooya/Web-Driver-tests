@@ -10,8 +10,8 @@ public class TC001_JustLogin extends ProjectHooks{
 	@BeforeTest
 	public void setValues() {
 		testcaseName = "Login";
-		testDescription ="Login to Leaftaps";
-		authors="Babu";
+		testDescription ="Login to TestLeaf Platform";
+		authors="Babu Sir";
 		category ="Smoke";
 		excelFileName="Login";
 	}
