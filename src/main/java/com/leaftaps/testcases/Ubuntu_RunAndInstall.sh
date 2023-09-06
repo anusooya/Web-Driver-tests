@@ -36,10 +36,10 @@ fi
 # Check if the condition is false, terminate and do not run test
 if( $bPassed); then
     echo "Running Automated tests as the Health check passed"
-    bash AutoInstall.sh
+    bash Ubuntu_AutoInstall.sh
 else
     echo "Health check failed and machine rebooting"
-    aws ec2 reboot-instances --instance-ids i-0a4ffebf4db24730b
+    aws ec2 reboot-instances --instance-ids i-0beaafebc128c5ed3
 fi
 
 #Push reporting results to AWS S3 bucket from Ubuntu
